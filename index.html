@@ -1,0 +1,790 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>マイクラエデュケーション×少人数制PC教育｜無料体験申込</title>
+  <meta name="description" content="遊びながら“使える”PC力を育てる少人数制マイクラエデュ教室。忙しい保護者でも安心、無料体験はLINEで簡単申込。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #F6F8FA;
+      --primary: #2C7BE5;
+      --white: #FFFFFF;
+      --text: #1E293B;
+      --muted: #64748B;
+      --accent: #E8F1FF;
+      --shadow: 0 10px 24px rgba(30, 41, 59, 0.08);
+      --radius: 18px;
+      --focus: 0 0 0 3px rgba(44, 123, 229, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "Meiryo", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 92vw);
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 72px 0;
+    }
+
+    .section-tight {
+      padding: 48px 0;
+    }
+
+    .eyebrow {
+      font-size: 0.9rem;
+      color: var(--primary);
+      letter-spacing: 0.08em;
+      font-weight: 700;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3vw, 3.1rem);
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 2.4vw, 2.4rem);
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .hero {
+      padding: 72px 0 48px;
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .fade-in {
+      animation: fadeSlide 0.45s ease-out both;
+    }
+
+    @keyframes fadeSlide {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .badge {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      background: var(--accent);
+      color: var(--primary);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 24px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 12px 20px rgba(44, 123, 229, 0.25);
+    }
+
+    .btn-outline {
+      background: var(--white);
+      color: var(--primary);
+      border: 2px solid rgba(44, 123, 229, 0.2);
+    }
+
+    .btn:focus-visible {
+      outline: none;
+      box-shadow: var(--focus);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero-visual {
+      background: linear-gradient(135deg, #E8F1FF, #FFFFFF);
+      border-radius: 28px;
+      padding: 24px;
+      min-height: 320px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .placeholder {
+      background: #DCE8F8;
+      border-radius: 16px;
+      padding: 18px;
+      color: #467DD1;
+      font-weight: 600;
+      text-align: center;
+      min-height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .stats {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+    .stat {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .stat strong {
+      font-size: 1.3rem;
+      color: var(--primary);
+      display: block;
+    }
+
+    .two-col {
+      display: grid;
+      gap: 28px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .icon-list {
+      display: grid;
+      gap: 14px;
+      margin: 24px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .icon-list li {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 12px;
+      align-items: start;
+      background: var(--white);
+      padding: 14px 16px;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .mini-cards {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    }
+
+    .voice-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 10px;
+    }
+
+    .stars {
+      color: #F4B400;
+      letter-spacing: 1px;
+      font-size: 0.95rem;
+    }
+
+    .faq-item {
+      border-radius: 14px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 18px 20px;
+      text-align: left;
+      background: var(--white);
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .faq-answer {
+      padding: 0 20px 18px;
+      color: var(--muted);
+      display: none;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-icon {
+      transition: transform 0.2s ease;
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+
+    .cta-band {
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 28px;
+      padding: 36px;
+      display: grid;
+      gap: 18px;
+      box-shadow: 0 14px 32px rgba(44, 123, 229, 0.25);
+    }
+
+    .cta-band p {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .closing {
+      background: #E8F1FF;
+    }
+
+    .closing .card {
+      background: transparent;
+      box-shadow: none;
+      padding: 0;
+    }
+
+    .pill {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+
+    .sticky-cta {
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--white);
+      box-shadow: var(--shadow);
+      border-radius: 999px;
+      padding: 10px 16px;
+      display: none;
+      align-items: center;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    .sticky-cta .btn {
+      padding: 10px 16px;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 880px) {
+      .hero-grid {
+        grid-template-columns: 1.05fr 0.95fr;
+      }
+
+      .hero {
+        padding: 92px 0 64px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .section {
+        padding: 56px 0;
+      }
+
+      .cta-group {
+        flex-direction: column;
+      }
+
+      .sticky-cta {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-grid fade-in">
+      <div>
+        <span class="badge">少人数制 × 初心者歓迎</span>
+        <h1>遊びながら<br />“使える”PC力を育てる</h1>
+        <p>30代保護者に向けた少人数マイクラ教室。タイピングと論理思考が身につき、家庭での不安が「できた！」に変わります。</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#apply">無料体験に申し込む</a>
+          <a class="btn btn-outline" href="#apply">LINEで簡単に予約</a>
+        </div>
+        <div class="stats" aria-label="実績">
+          <div class="stat">
+            <strong>満足度 94%*</strong>
+            <span>継続のしやすさ</span>
+          </div>
+          <div class="stat">
+            <strong>少人数 1:4</strong>
+            <span>丁寧に対話</span>
+          </div>
+          <div class="stat">
+            <strong>初心者 70%*</strong>
+            <span>はじめてでも安心</span>
+          </div>
+        </div>
+        <p style="font-size:0.8rem;">* 数値はイメージです。</p>
+      </div>
+      <div class="hero-visual">
+        <div class="placeholder"><!-- ここにイラスト / 抽象背景 / 明るい写真 -->
+          明るいイラスト・抽象背景プレースホルダ
+        </div>
+        <div class="mini-cards">
+          <div class="card">
+            <h3>親子で共有しやすい進捗レポート</h3>
+            <p>家庭でも学びがつながるよう、要点を短く整理して共有。</p>
+          </div>
+          <div class="card">
+            <h3>安心の無理な勧誘なし</h3>
+            <p>体験後のしつこい営業はありません。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" style="background: #EFF3F8;">
+    <div class="container grid">
+      <div>
+        <span class="eyebrow">共感・課題</span>
+        <h2>「うちの子、大丈夫かな？」と感じる瞬間はありませんか？</h2>
+        <p>忙しい毎日だからこそ、気づいているのに手が回らない。不安を否定せず、一つずつ整理していきましょう。</p>
+      </div>
+      <div class="two-col">
+        <div class="card">
+          <h3>よくあるお悩み</h3>
+          <ul class="icon-list" style="margin-top:14px;">
+            <li>
+              <span class="icon">⏰</span>
+              <div>
+                <strong>教える時間が取れない</strong>
+                <p>仕事と育児で日々が手いっぱい。</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon">❓</span>
+              <div>
+                <strong>何から始めればいいか不明</strong>
+                <p>家庭での補い方が分からない。</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon">⌨</span>
+              <div>
+                <strong>タイピングが伸びない</strong>
+                <p>基礎が身につかず不安になる。</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon">🧠</span>
+              <div>
+                <strong>考える力が育っているか心配</strong>
+                <p>操作はできても思考が伴わない。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>だからこそ今から</h3>
+          <p>「できた！」の経験を重ねることで、自信と将来の選択肢が広がります。</p>
+          <div class="placeholder" style="min-height:120px;"><!-- ここに図解 -->
+            安心感を伝える図解プレースホルダ
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid">
+      <div>
+        <span class="eyebrow">問題具体化</span>
+        <h2>動画は見られる。でも使えるとは限らない</h2>
+        <p>受動的に操作するだけでは、将来必要になる「考えて指示する力」は育ちにくい。だから今こそ、遊びの中で実践する機会が必要です。</p>
+      </div>
+      <div class="two-col">
+        <div class="card">
+          <h3>Before</h3>
+          <p>操作はできるけど、目的に合わせて考える力が育ちにくい。</p>
+        </div>
+        <div class="card" style="border:2px solid #C8DBF7;">
+          <h3>After</h3>
+          <p>「どうすればいい？」を自分で考え、試し、言語化できる。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid">
+      <div>
+        <span class="eyebrow">解決策</span>
+        <h2>マイクラだから身につく3つの力</h2>
+        <p>遊びながら、未来につながる「考えるPC操作」を身につけます。</p>
+      </div>
+      <div class="two-col">
+        <div class="card">
+          <div class="icon">論</div>
+          <h3>論理的思考</h3>
+          <p>順序立てて考えるクセが自然に身につく。</p>
+        </div>
+        <div class="card">
+          <div class="icon">指</div>
+          <h3>指示理解</h3>
+          <p>目標に合わせて手順を組み立てる力。</p>
+        </div>
+        <div class="card">
+          <div class="icon">操</div>
+          <h3>操作スキル</h3>
+          <p>タイピングとショートカットも段階的に習得。</p>
+        </div>
+      </div>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="#apply">無料体験に申し込む</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid">
+      <div>
+        <span class="eyebrow">サービス紹介</span>
+        <h2>マイクラエデュ × 少人数制の安心設計</h2>
+        <p>教育版マイクラで、対話しながら段階的に学べるカリキュラム。</p>
+      </div>
+      <div class="two-col">
+        <div class="card">
+          <h3>学びが続く理由</h3>
+          <ul class="icon-list">
+            <li>
+              <span class="icon">1</span>
+              <div>
+                <strong>少人数制で質問しやすい</strong>
+                <p>1クラス4名まで。目が行き届くから安心。</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon">2</span>
+              <div>
+                <strong>段階的に学べる設計</strong>
+                <p>タイピングから応用まで無理なく進む。</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon">3</span>
+              <div>
+                <strong>初心者サポート</strong>
+                <p>初めてでも迷わないスタートガイド。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="placeholder" style="min-height:240px;"><!-- ここに教室写真 -->
+            教室写真プレースホルダ
+          </div>
+          <p style="margin-top:14px;">対話型の指導で、子どもの「やってみたい」を引き出します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid">
+      <div>
+        <span class="eyebrow">利用者像</span>
+        <h2>こんなお子さまに選ばれています</h2>
+        <p>小学生から初心者まで、PCが苦手でもOK。</p>
+      </div>
+      <div class="two-col">
+        <div class="card">
+          <h3>対象</h3>
+          <p>小学1年生?6年生、初めてのPC学習。</p>
+          <div class="placeholder" style="min-height:140px;"><!-- ここに人物イラスト -->
+            人物イラストプレースホルダ
+          </div>
+        </div>
+        <div class="card">
+          <h3>保護者の声</h3>
+          <p>忙しい中でも無理なく続けられる仕組みがある。</p>
+          <div class="placeholder" style="min-height:140px;"><!-- ここに人物イラスト -->
+            親子イラストプレースホルダ
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid">
+      <div>
+        <span class="eyebrow">ベネフィット</span>
+        <h2>将来につながる考える力</h2>
+        <p>「使えるPC力」が、将来の学び・仕事を支えます。</p>
+      </div>
+      <ul class="icon-list">
+        <li>
+          <span class="icon">?</span>
+          <div>
+            <strong>自分で考えて行動する習慣</strong>
+            <p>課題に向き合う姿勢が身につく。</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">?</span>
+          <div>
+            <strong>PCへの抵抗感がなくなる</strong>
+            <p>自信がつき、学びの幅が広がる。</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">?</span>
+          <div>
+            <strong>将来の選択肢が増える</strong>
+            <p>ITスキルが当たり前の時代に備えられる。</p>
+          </div>
+        </li>
+      </ul>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="#apply">無料体験に申し込む</a>
+        <a class="btn btn-outline" href="#apply">LINEで簡単に予約</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid">
+      <div>
+        <span class="eyebrow">実績・お客様の声</span>
+        <h2>保護者の安心につながるレビュー</h2>
+        <p>実際に通う家庭から届いた声（ダミー）をご紹介。</p>
+      </div>
+      <div class="mini-cards">
+        <div class="voice-card">
+          <div class="stars" aria-label="5つ星">★★★★★</div>
+          <p>「家でも自分からPCを開くようになりました。説明も分かりやすいです。」</p>
+          <strong>小学3年生の保護者</strong>
+        </div>
+        <div class="voice-card">
+          <div class="stars" aria-label="5つ星">★★★★★</div>
+          <p>「少人数なので質問しやすく、安心して任せられます。」</p>
+          <strong>小学5年生の保護者</strong>
+        </div>
+        <div class="voice-card">
+          <div class="stars" aria-label="4つ星">★★★★☆</div>
+          <p>「タイピングが苦手でも丁寧にサポートしてくれました。」</p>
+          <strong>小学2年生の保護者</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid">
+      <div>
+        <span class="eyebrow">よくある質問</span>
+        <h2>初心者でも大丈夫</h2>
+        <p>気になる不安は、まずここで解消。</p>
+      </div>
+      <div class="grid">
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            初心者でもついていけますか？
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-answer">最初はタイピングからスタート。習熟度に合わせて進めるので安心です。</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            持ち物は何が必要ですか？
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-answer">教室ではPCを用意しています。自宅用の準備は不要です。</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            対象年齢は？
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-answer">小学1年生から6年生までが中心です。学年に合わせて内容を調整します。</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            体験後の勧誘はありますか？
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-answer">無理な勧誘は一切ありません。ご家庭のペースで検討してください。</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            振替はできますか？
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-answer">事前連絡で振替可能です。忙しい保護者でも通いやすい仕組みです。</div>
+        </div>
+      </div>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="#apply">無料体験に申し込む</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section closing" id="apply">
+    <div class="container">
+      <div class="cta-band">
+        <span class="pill">無料体験・LINE申込</span>
+        <h2>まずは無料体験で、子どもの「できた！」を体感</h2>
+        <p>無理な勧誘なし。LINEから1分で申込完了。</p>
+        <div class="two-col">
+          <div class="card">
+            <h3>体験でわかる3つのこと</h3>
+            <ul class="icon-list" style="margin-top:12px;">
+              <li>
+                <span class="icon">?</span>
+                <div>
+                  <strong>今のPCレベル</strong>
+                  <p>どこから始めるのが最適か。</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon">?</span>
+                <div>
+                  <strong>学びの相性</strong>
+                  <p>マイクラ学習が合うか体感。</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon">?</span>
+                <div>
+                  <strong>成長の道筋</strong>
+                  <p>将来につながる力の育て方。</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>今すぐ申込</h3>
+            <p>LINE登録で予約できます。所要時間1分。</p>
+            <a class="btn btn-primary" href="https://example.com" target="_blank" rel="noopener">LINEで簡単に予約</a>
+            <p style="font-size:0.85rem; margin-top:10px;">※ 外部リンクはダミーです。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sticky-cta" role="region" aria-label="追従CTA">
+    <span style="font-weight:700; color: var(--primary);">無料体験受付中</span>
+    <a class="btn btn-primary" href="#apply">LINEで予約</a>
+  </div>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach((item) => {
+      const button = item.querySelector('.faq-question');
+      button.addEventListener('click', () => {
+        item.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
+
